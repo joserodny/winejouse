@@ -1,6 +1,6 @@
 <?php
 
-$con = mysqli_connect("localhost","root","","winejouse");
+$con = mysqli_connect("db","root","example","winejouse");
 
 if(mysqli_connect_errno())
 {

@@ -49,7 +49,7 @@ include("connection/conn.php");
 				
 				<?php
 			
-				$con = mysqli_connect("localhost","root","","winejouse");
+				$con = new mysqli("db","root","example","winejouse");
 					if(isset($_POST['login']))
 					{
 						

@@ -1,4 +1,3 @@
-<!DOCTYPE>
 
 <?php
 session_start();
@@ -6,6 +5,7 @@ include("function/function.php");
 ?>
 
 
+<!DOCTYPE>
 <html>
 <head>
 <title> Wine Jouse </title>

@@ -1,5 +1,5 @@
 <?php
 
-$con = mysqli_connect("localhost","root","","winejouse");
+$con = mysqli_connect("db","root","example","winejouse");
 
 ?>
