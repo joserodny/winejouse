@@ -1,4 +1,3 @@
-<!DOCTYPE>
 
 <?php
 session_start();
@@ -6,6 +5,9 @@ session_start();
 	include("connection/conn.php");
 		
 ?>
+
+
+<!DOCTYPE>
 
 
 <html>

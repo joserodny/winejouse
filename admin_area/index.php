@@ -1,9 +1,8 @@
-
 <?php
-	session_start();
-include("../connection/conn.php");
+
 ?>
 
+<!DOCTYPE>
 <html>
 <head>
 <title>Dashboard</title>
@@ -199,7 +198,6 @@ include("../connection/conn.php");
 
 
 
-
 					
 <!-- end login modal-->
 
@@ -231,11 +229,12 @@ include("../connection/conn.php");
 					if (mysqli_connect_errno())
 					{
 					echo "Failed to connect to MySQL: " . mysqli_connect_error();
-							}
+					}
+					$conn = new mysqli('db', 'root', 'example', 'winejouse');
+					$result = " select * from customers where type like '%pending%'";
 
-					$sql="SELECT type from customers where type like '%pending%'";
 
-					if ($result=mysqli_query($con,$sql))
+					if ($result = $conn->query($result))
 						{
 							// Return the number of rows in result set
 							$rowcount=mysqli_num_rows($result);
@@ -244,7 +243,7 @@ include("../connection/conn.php");
 						mysqli_free_result($result);
 						}
 
-						mysqli_close($con);
+						mysqli_close($conn);
 						?>
 				  
 				  </div>
@@ -269,7 +268,7 @@ include("../connection/conn.php");
 					
 					  
 					   <?php
-						$conn=mysqli_connect("localhost","root","","winejouse");
+						$conn=mysqli_connect("db","root","example","winejouse");
 					// Check connection
 					if (mysqli_connect_errno())
 					{
@@ -305,7 +304,7 @@ include("../connection/conn.php");
                   <div class="mr-5">Pending Orders:
 				  
 				  				  <?php
-						$con=mysqli_connect("localhost","root","","winejouse");
+						$con=mysqli_connect("db","root","example","winejouse");
 					// Check connection
 					if (mysqli_connect_errno())
 					{
@@ -347,7 +346,7 @@ include("../connection/conn.php");
 				  
 				   
 				  <?php
-						$con=mysqli_connect("localhost","root","","winejouse");
+						$con=mysqli_connect("db","root","example","winejouse");
 					// Check connection
 					if (mysqli_connect_errno())
 					{

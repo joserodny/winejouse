@@ -1,11 +1,10 @@
-<!DOCTYPE>
-
 <?php
 session_start();
-	include("function/function.php");
-	
-		
+include("function/function.php");		
 ?>
+<!DOCTYPE>
+
+
 
 
 <html>

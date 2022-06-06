@@ -1,11 +1,12 @@
-<!DOCTYPE>
-
 <?php
 session_start();
 	include("function/function.php");
 	include("connection/conn.php") 
 		
 ?>
+
+<!DOCTYPE>
+
 
 
 <html>
